@@ -2,9 +2,9 @@
 title: HIPAA Policy Explorer
 
 toc_footers:
-  - <a href="http://filamentlabs.github.io/PolicyExplorer/">Filament Lab's Policy Explorer on Github</a>
-  - <a href='https://github.com/catalyzeio/policies'>Catalyze HIPAA Policy Documentation on Github</a>
-  - <a href='https://github.com/tripit/slate'>Slate Documentation on Github</a>
+  - <a href="http://filamentlabs.github.io/PolicyExplorer/">Policy Explorer Github</a>
+  - <a href='https://github.com/catalyzeio/policies'>Catalyze HIPAA Policy Documentation</a>
+  - <a href='https://github.com/tripit/slate'>Slate Documentation</a>
  
 includes:
   - introduction
