@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Documentation</title>
+
+    <link href="../stylesheets/screen.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../stylesheets/print.css" rel="stylesheet" type="text/css" media="print" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="../javascripts/all_nosearch.js" type="text/javascript"></script>
+
+  </head>
+
+  <body class="includes includes_configuration_management_policy">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="../images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+      <div class="brand-logo">
+      <img src="../images/logo.png" />
+      </div>
+      <div id="toc">
+      </div>
+    </div>
+    <div class="page-wrapper">
+
+      <div class="content">
+        <h1 id="configuration-management-policy">Configuration Management Policy</h1>
+
+<p>Catalyze standardizes and automates configuration management through the use of Salt scripts as well as documentation of all changes to production systems and networks. Salt automatically configures all Catalyze systems according to established and tested policies, and is used as part of our Disaster Recovery plan and process.</p>
+
+<h2 id="applicable-standards-from-the-hitrust-common-security-framework">Applicable Standards from the HITRUST Common Security Framework</h2>
+
+<ul>
+<li>06 - Configuration Management</li>
+</ul>
+
+<h2 id="applicable-standards-from-the-hipaa-security-rule">Applicable Standards from the HIPAA Security Rule</h2>
+
+<ul>
+<li>164.310(a)(2)(iii) Access Control &amp; Validation Procedures</li>
+</ul>
+
+<h2 id="configuration-management">Configuration Management</h2>
+
+<ol>
+<li>Salt is used to standardize and automate configuration management.</li>
+<li>OSSEC is used to scan systems every 2 hours and on reboot. These scans capture file system changes and also unauthorized or malicious software.</li>
+<li>No systems are deployed into Catalyze environments without approval of the Catalyze CTO.</li>
+<li>All changes to production systems, network devices, and firewalls are approved by the Catalyze CTO before they are implemented. Additionally, all changes are tested before they are implemented in production.</li>
+<li>An up-to-date inventory of systems is maintained using Google spreadsheets and architecture diagrams hosted on Google Apps and Box. All systems are categorized as production and utility to differentiate based on criticality.</li>
+<li>Clocks are synchronized across all systems using NTP. Modifying time data on systems is restricted.</li>
+<li>All front end functionality (developer dashboards and portals) is separated from backend (database and app servers) systems by being deployed on separate servers.</li>
+<li>All software and systems are tested using unit tests and end to end tests.</li>
+<li>All committed code is reviewed using pull requests (on Github) to assure software code quality and proactively detect potential security issues in development.</li>
+<li>Catalyze utilizes development and staging environments that mirror production to assure proper function.</li>
+<li>Catalyze also deploys environments locally using Vagrant to assure functionality before moving to staging or production.</li>
+<li>Catalyze schedules production deployments every four weeks.</li>
+<li>All formal change requests require unique ID and authentication.</li>
+</ol>
+
+      </div>
+
+      <div class="dark-box far-right-column">
+      </div>
+
+    </div>
+  </body>
+</html>

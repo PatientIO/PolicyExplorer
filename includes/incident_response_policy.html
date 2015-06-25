@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Documentation</title>
+
+    <link href="../stylesheets/screen.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../stylesheets/print.css" rel="stylesheet" type="text/css" media="print" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="../javascripts/all_nosearch.js" type="text/javascript"></script>
+
+  </head>
+
+  <body class="includes includes_incident_response_policy">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="../images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+      <div class="brand-logo">
+      <img src="../images/logo.png" />
+      </div>
+      <div id="toc">
+      </div>
+    </div>
+    <div class="page-wrapper">
+
+      <div class="content">
+        <h1 id="incident-response-policy">Incident Response Policy</h1>
+
+<p>Catalyze implements an information security incident response process to consistently detect, respond, and report incidents, minimize loss and destruction, mitigate the weaknesses that were exploited, and restore information system functionality and business continuity as soon as possible.</p>
+
+<p>The incident response process addresses:</p>
+
+<ul>
+<li>Continuous monitoring of threats through intrusion detection systems (IDS) and other monitoring applications;</li>
+<li>Establishment of an information security incident response team;</li>
+<li>Establishment of procedures to respond to media inquiries;</li>
+<li>Establishment of clear procedures for identifying, responding, assessing, analyzing, and follow-up of information security incidents;</li>
+<li>Workforce training, education, and awareness on information security incidents and required responses; and</li>
+<li>Facilitation of clear communication of information security incidents with internal, as well as external, stakeholders</li>
+</ul>
+
+<h2 id="applicable-standards-from-the-hitrust-common-security-framework">Applicable Standards from the HITRUST Common Security Framework</h2>
+
+<ul>
+<li>02.f - Disciplinary Process</li>
+<li>06.f - Prevention of Misuse of Information Assets</li>
+<li>11.a - Reporting Information Security Events</li>
+<li>11.c - Responsibilities and Procedures</li>
+<li>11.a - Reporting Information Security Events</li>
+</ul>
+
+<h2 id="applicable-standards-from-the-hipaa-security-rule">Applicable Standards from the HIPAA Security Rule</h2>
+
+<ul>
+<li>164.308(a)(5)(i) – Security Awareness and Training</li>
+<li>164.308(a)(6) – Security Incident Procedures</li>
+</ul>
+
+<h2 id="incident-management-policies">Incident Management Policies</h2>
+
+<p>The Catalyze incident response process follows the process recommended by SANS, an industry leader in security (www.sans.org). Process flows are a direct representation of the SANS process. Review Appendix 1 for a flowchart identifying each phase.</p>
+
+<h3 id="identification-phase">Identification Phase</h3>
+
+<ol>
+<li>Immediately upon observation Catalyze members report suspected and known Precursors, Events, Indications, and Incidents in one of the following ways:
+
+<ol>
+<li>Direct report to management, the Security Officer, Privacy Officer, or other;</li>
+<li>Email;</li>
+<li>Phone call;</li>
+<li>Online incident response form located <a href="https://docs.google.com/a/catalyze.io/forms/d/1Hn4di9Jdw5JT8vISMh6tVUnh94VpeHucell7Ca4fKTo/viewform">here</a>;</li>
+<li>Secure Chat.</li>
+<li>Anonymously through workforce members desired channels.</li>
+<li>The individual receiving the report facilitates completion of an <a href="./incident.form.pdf">Incident Identification form</a> and notifies the Security Officer (if not already done).</li>
+<li>The Security Officer determines if the issue is a Precursor, Incident, Event, or Incident.</li>
+<li>If the issue is an event, indication, or precursor the Security Officer forwards it to the appropriate resource for resolution.
+
+<ol>
+<li>Non-Technical Event (minor infringement): the Security Officer completes a SIR Form (see Appendix 2) and investigates the incident.</li>
+<li>Technical Event: Assign the issue to an IT resource for resolution. This resource may also be a contractor or outsourced technical resource, in the event of a small office or lack of expertise in the area.</li>
+</ol></li>
+<li>If the issue is a security incident the Security Officer activates the Security Incident Response Team (SIRT) and notifies senior management.
+
+<ol>
+<li>If a non-technical security incident is discovered the SIRT completes the investigation, implements preventative measures, and resolves the security incident.</li>
+<li>Once the investigation is completed, progress to Phase V, Follow-up.</li>
+<li>If the issue is a technical security incident, commence to Phase II: Containment.</li>
+<li>The Containment, Eradication, and Recovery Phases are highly technical. It is important to have them completed by a highly qualified technical security resource with oversight by the SIRT team.</li>
+<li>Each individual on the SIRT and the technical security resource document all measures taken during each phase, including the start and end times of all efforts.</li>
+<li>The lead member of the SIRT team facilitates initiation of a Security Incident Report (SIR) Form (See Appendix 2 for sample format) or an Incident Survey Form (See Appendix 4).  The intent of the SIR form is to provide a summary of all events, efforts, and conclusions of each Phase of this policy and procedures.</li>
+</ol></li>
+<li>The Security Officer, Privacy Officer, or Catalyze representative appointed notifies any affected Customers and Partners. If no Customers and Partners are affected, notification is at the discretion of the Security and Privacy Officer.</li>
+<li>In the case of a threat identified, the Security Officer is to form a team to investigate and involve necessary resources, both internal to Catalyze and potentially external.</li>
+</ol></li>
+</ol>
+
+<h3 id="containment-phase-technical">Containment Phase (Technical)</h3>
+
+<p>In this Phase, Catalyze’s IT department attempts to contain the security incident. It is extremely important to take detailed notes during the security incident response process. This provides that the evidence gathered during the security incident can be used successfully during prosecution, if appropriate.</p>
+
+<ol>
+<li>The SIRT reviews any information that has been collected by the Security Officer or any other individual investigating the security incident.</li>
+<li>The SIRT secures the network perimeter.</li>
+<li>The IT department performs the following:
+
+<ol>
+<li>Securely connect to the affected system over a trusted connection.</li>
+<li>Retrieve any volatile data from the affected system.</li>
+<li>Determine the relative integrity and the appropriateness of backing the system up.</li>
+<li>If appropriate, back up the system.</li>
+<li>Change the password(s) to the affected system(s).</li>
+<li>Determine whether it is safe to continue operations with the affect system(s).</li>
+<li>If it is safe, allow the system to continue to function; 
+
+<ol>
+<li>Complete any documentation relative to the security incident on the SIR Form.</li>
+<li>Move to Phase V, Follow-up.<br></li>
+</ol></li>
+<li>If it is NOT safe to allow the system to continue operations, discontinue the system(s) operation and move to Phase III, Eradication.</li>
+<li>The individual completing this phase provides written communication to the SIRT.</li>
+</ol></li>
+<li>Continuously apprise Senior Management of progress.</li>
+<li>Continue to notify affected Customers and Partners with relevant updates as needed</li>
+</ol>
+
+<h3 id="eradication-phase-technical">Eradication Phase (Technical)</h3>
+
+<p>The Eradication Phase represents the SIRT’s effort to remove the cause, and the resulting security exposures, that are now on the affected system(s).</p>
+
+<ol>
+<li>Determine symptoms and cause related to the affected system(s).</li>
+<li>Strengthen the defenses surrounding the affected system(s), where possible (a risk assessment may be needed and can be determined by the Security Officer). This may include the following:
+
+<ol>
+<li>An increase in network perimeter defenses.</li>
+<li>An increase in system monitoring defenses.</li>
+<li>Remediation (“fixing”) any security issues within the affected system, such as removing unused services/general host hardening techniques.</li>
+</ol></li>
+<li>Conduct a detailed vulnerability assessment to verify all the holes/gaps that can be exploited have been addressed.
+
+<ol>
+<li>If additional issues or symptoms are identified, take appropriate preventative measures to eliminate or minimize potential future compromises.</li>
+</ol></li>
+<li>Complete the Eradication Form (see Appendix 4).</li>
+<li>Update the documentation with the information learned from the vulnerability assessment, including the cause, symptoms, and the method used to fix the problem with the affected system(s).</li>
+<li>Apprise Senior Management of the progress.</li>
+<li>Continue to notify affected Customers and Partners with relevant updates as needed.</li>
+<li>Move to Phase IV, Recovery.</li>
+</ol>
+
+<h3 id="recovery-phase-technical">Recovery Phase (Technical)</h3>
+
+<p>The Recovery Phase represents the SIRT’s effort to restore the affected system(s) back to operation after the resulting security exposures, if any, have been corrected.</p>
+
+<ol>
+<li>The technical team determines if the affected system(s) have been changed in any way.
+
+<ol>
+<li>If they have, the technical team restores the system to its proper, intended functioning (“last known good”).</li>
+<li>Once restored, the team validates that the system functions the way it was intended/had functioned in the past. This may require the involvement of the business unit that owns the affected system(s).</li>
+<li>If operation of the system(s) had been interrupted (i.e., the system(s) had been taken offline or dropped from the network while triaged), restart the restored and validated system(s) and monitor for behavior.</li>
+<li>If the system had not been changed in any way, but was taken offline (i.e., operations had been interrupted), restart the system and monitor for proper behavior.</li>
+<li>Update the documentation with the detail that was determined during this phase.</li>
+<li>Apprise Senior Management of progress.</li>
+<li>Continue to notify affected Customers and Partners with relevant updates as needed.</li>
+<li>Move to Phase V, Follow-up.</li>
+</ol></li>
+</ol>
+
+<h3 id="follow-up-phase-technical-and-non-technical">Follow-up Phase (Technical and Non-Technical)</h3>
+
+<p>The Follow-up Phase represents the review of the security incident to look for “lessons learned” and to determine whether the process that was taken could have been improved in any way. It is recommended all security incidents be reviewed shortly after resolution to determine where response could be improved. Timeframes may extend to one to two weeks post-incident.</p>
+
+<ol>
+<li>Responders to the security incident (SIRT Team and technical security resource) meet to review the documentation collected during the security incident.</li>
+<li>Create a “lessons learned” document and attach it to the completed SIR Form.
+
+<ol>
+<li>Evaluate the cost and impact of the security incident to Catalyze using the documents provided by the SIRT and the technical security resource.</li>
+<li>Determine what could be improved.</li>
+<li>Communicate these findings to Senior Management for approval and for implementation of any recommendations made post-review of the security incident.</li>
+<li>Carry out recommendations approved by Senior Management; sufficient budget, time and resources should be committed to this activity.</li>
+<li>Close the security incident.</li>
+</ol></li>
+</ol>
+
+<h3 id="periodic-evaluation">Periodic Evaluation</h3>
+
+<p>It is important to note that the processes surrounding security incident response should be periodically reviewed and evaluated for effectiveness. This also involves appropriate training of resources expected to respond to security incidents, as well as the training of the general population regarding the Catalyze’s expectation for them, relative to security responsibilities. The incident response plan is tested annually.</p>
+
+<h2 id="security-incident-response-team-sirt">Security Incident Response Team (SIRT)</h2>
+
+<p>Individuals needed and responsible to respond to a security incident make up a Security Incident Response Team (SIRT). Members may include the following:</p>
+
+<ul>
+<li>Security Officer</li>
+<li>Privacy Officer</li>
+<li>Senior Management</li>
+<li>VP of Engineering</li>
+</ul>
+
+      </div>
+
+      <div class="dark-box far-right-column">
+      </div>
+
+    </div>
+  </body>
+</html>

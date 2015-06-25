@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Documentation</title>
+
+    <link href="../stylesheets/screen.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../stylesheets/print.css" rel="stylesheet" type="text/css" media="print" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="../javascripts/all_nosearch.js" type="text/javascript"></script>
+
+  </head>
+
+  <body class="includes includes_key_definitions">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="../images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+      <div class="brand-logo">
+      <img src="../images/logo.png" />
+      </div>
+      <div id="toc">
+      </div>
+    </div>
+    <div class="page-wrapper">
+
+      <div class="content">
+        <h1 id="key-definitions">Key Definitions</h1>
+
+<ul>
+<li><p><em>Application</em>: An application hosted by Catalyze, either maintained and created by Catalyze, or maintained and created by a Customer or Partner.</p></li>
+<li><p><em>Application Level</em>: Controls and security associated with an Application. In the case of PaaS Customers, Catalyze does not have access to and cannot assure compliance with security standards and policies at the Application Level.</p></li>
+<li><p><em>Audit</em>: Internal process of reviewing information system access and activity (e.g., log-ins, file accesses, and security incidents). An audit may be done as a periodic event, as a result of a patient complaint, or suspicion of employee wrongdoing.</p></li>
+<li><p><em>Audit Controls</em>: Technical mechanisms that track and record computer/system activities.</p></li>
+<li><p><em>Audit Logs</em>: Encrypted records of activity maintained by the system which provide: 1) date and time of activity; 2) origin of activity (app); 3) identification of user doing activity; and 4) data accessed as part of activity.</p></li>
+<li><p><em>Access</em>: Means the ability or the means necessary to read, write, modify, or communicate data/ information or otherwise use any system resource.</p></li>
+<li><p><em>BaaS</em>: Backend-as-a-Service. A set of APIs, and associated SDKs, for rapid mobile and web application development. APIs offer the ability to create users, do authentication, store data, and store files.</p></li>
+<li><p><em>Backup</em>: The process of making an electronic copy of data stored in a computer system. This can either be complete, meaning all data and programs, or incremental, including just the data that changed from the previous backup.</p></li>
+<li><p><em>Backup Service</em>: A logging service for unifying system and application logs, encrypting them, and providing a dashboard for them. Offered with all Catalyze Add-ons and as an option for PaaS Customers.</p></li>
+<li><p><em>Breach</em>: Means the acquisition, access, use, or disclosure of protected health information (PHI) in a manner not permitted under the Privacy Rule which compromises the security or privacy of the PHI. For purpose of this definition, “compromises the security or privacy of the PHI” means poses a significant risk of financial, reputational, or other harm to the individual. A use or disclosure of PHI that does not include the identifiers listed at §164.514(e)(2), limited data set, date of birth, and zip code does not compromise the security or privacy of the PHI. Breach excludes:</p></li>
+</ul>
+
+<p>1. Any unintentional acquisition, access or use of PHI by a workforce member or person acting under the authority of a Covered Entity (CE) or Business Associate (BA) if such acquisition, access, or use was made in good faith and within the scope of authority and does not result in further use or disclosure in a manner not permitted under the Privacy Rule.
+    2. Any inadvertent disclosure by a person who is authorized to access PHI at a CE or BA to another person authorized to access PHI at the same CE or BA, or organized health care arrangement in which the CE participates, and the information received as a result of such disclosure is not further used or disclosed in a manner not permitted under the Privacy Rule.
+    3. A disclosure of PHI where a CE or BA has a good faith belief that an unauthorized person to whom the disclosure was made would not reasonably have been able to retain such information. </p>
+
+<ul>
+<li><p><em>Business Associate</em>: A person or entity that performs certain functions or activities that involve the use or disclosure of protected health information on behalf of, or provides services to, a covered entity.</p></li>
+<li><p><em>Covered Entity</em>: A health plan, health care clearinghouse, or a healthcare provider who transmits any health information in electronic form. </p></li>
+<li><p><em>De-identification</em>: The process of removing identifiable information so that data is rendered to not be PHI.</p></li>
+<li><p><em>Disaster Recovery</em>: The ability to recover a system and data after being made unavailable.</p></li>
+<li><p><em>Disaster Recovery Service</em>: A disaster recovery service for disaster recovery in the case of system unavailability. This includes both the technical and the non-technical (process) required to effectively stand up an application after an outage. Offered with all Catalyze Add-ons and as an option for PaaS Customers.</p></li>
+<li><p><em>Disclosure</em>: Disclosure means the release, transfer, provision of, access to, or divulging in any other manner of information outside the entity holding the information.</p></li>
+<li><p><em>Customers</em>: Contractually bound users of Catalyze Platform.</p></li>
+<li><p><em>Electronic Protected Health Information (ePHI)</em>: Any individually identifiable health information protected by HIPAA that is transmitted by, processed in some way, or stored in electronic media. </p></li>
+<li><p><em>Environment</em>: The overall technical environment, including all servers, network devices, and applications.</p></li>
+<li><p><em>Event</em>: An event is defined as an occurrence that does not constitute a serious adverse effect on Catalyze, its operations, or its Customers, though it may be less than optimal. Examples of events include, but are not limited to:</p>
+
+<ul>
+<li>A hard drive malfunction that requires replacement;</li>
+<li> Systems become unavailable due to power outage that is non-hostile in nature, with redundancy to assure ongoing availability of data;</li>
+<li>Accidental lockout of an account due to incorrectly entering a password multiple times.</li>
+</ul></li>
+<li><p><em>Hardware (or hard drive)</em>: Any computing device able to create and store ePHI.</p></li>
+<li><p><em>Health and Human Services (HHS)</em>: The government body that maintains HIPAA.</p></li>
+<li><p><em>Individually Identifiable Health Information</em>: That information that is a subset of health information, including demographic information collected from an individual, and is created or received by a health care provider, health plan, employer, or health care clearinghouse; and relates to the past, present, or future physical or mental health or condition of an individual; the provision of health care to an individual; or the past, present, or future payment for the provision of health care to an individual; and identifies the individual; or with respect to which there is a reasonable basis to believe the information can be used to identify the individual.</p></li>
+<li><p><em>Indication</em>: A sign that an Incident may have occurred or may be occurring at the present time. Examples of indications include:</p>
+
+<ul>
+<li>The network intrusion detection sensor alerts when a known exploit occurs against an FTP server. Intrusion detection is generally reactive, looking only for footprints of known attacks. It is important to note that many IDS “hits” are also false positives and are neither an event nor an incident;</li>
+<li>The antivirus software alerts when it detects that a host is infected with a worm;</li>
+<li>Users complain of slow access to hosts on the Internet;</li>
+<li>The system administrator sees a filename with unusual characteristics;</li>
+<li>Automated alerts of activity from log monitors like OSSEC;</li>
+<li>An alert from OSSEC about file system integrity issues.</li>
+</ul></li>
+<li><p><em>Intrusion Detection System (IDS)</em>: A software tool use to automatically detect and notify in the event of possible unauthorized network and/or system access. </p></li>
+<li><p><em>IDS Service</em>: An Intrusion Detection Service for providing IDS notification to customers in the case of suspicious activity. Offered with all Catalyze Add-ons and as an option for PaaS Customers.</p></li>
+<li><p><em>Law Enforcement Official</em>: Any officer or employee of an agency or authority of the United States, a State, a territory, a political subdivision of a State or territory, or an Indian tribe, who is empowered by law to investigate or conduct an official inquiry into a potential violation of law; or prosecute or otherwise conduct a criminal, civil, or administrative proceeding arising from an alleged violation of law.</p></li>
+<li><p><em>Logging Service</em>: A logging service for unifying system and application logs, encrypting them, and providing a dashboard for them. Offered with all Catalyze Add-ons and as an option for PaaS Customers.</p></li>
+<li><p><em>Messaging</em>: API-based services to deliver and receive SMS messages.</p></li>
+<li><p><em>Minimum Necessary Information</em>: Protected health information that is the minimum necessary to accomplish the intended purpose of the use, disclosure, or request. The “minimum necessary” standard applies to all protected health information in any form.</p></li>
+<li><p><em>Off-Site</em>: For the purpose of storage of Backup media, off-site is defined as any location separate from the building in which the backup was created. It must be physically separate from the creating site.</p></li>
+<li><p><em>Organization</em>: For the purposes of this policy, the term “organization” shall mean Catalyze.</p></li>
+<li><p><em>Partner</em>: Contractual bound 3rd party vendor with integration with the Catalyze Platform. May offer Add-on services.</p></li>
+<li><p><em>Platform</em>: The overall technical environment of Catalyze.</p></li>
+<li><p><em>Protected Health Information (PHI)</em>: Individually identifiable health information that is created by or received by the organization, including demographic information, that identifies an individual, or provides a reasonable basis to believe the information can be used to identify an individual, and relates to:</p>
+
+<ul>
+<li>Past, present or future physical or mental health or condition of an individual.</li>
+<li>The provision of health care to an individual.</li>
+<li>The past, present, or future payment for the provision of health care to an individual.</li>
+</ul></li>
+<li><p><em>Role</em>: The category or class of person or persons doing a type of job, defined by a set of similar or identical responsibilities.</p></li>
+<li><p><em>Sanitization</em>: Removal or the act of overwriting data to a point of preventing the recovery of the data on the device or media that is being sanitized. Sanitization is typically done before re-issuing a device or media, donating equipment that contained sensitive information or returning leased equipment to the lending company.</p></li>
+<li><p><em>Trigger Event</em>: Activities that may be indicative of a security breach that require further investigation (See Appendix).</p></li>
+<li><p><em>Restricted Area</em>: Those areas of the building(s) where protected health information and/or sensitive organizational information is stored, utilized, or accessible at any time. </p></li>
+<li><p><em>Role</em>: The category or class of person or persons doing a type of job, defined by a set of similar or identical responsibilities.</p></li>
+<li><p><em>Precursor</em>: A sign that an Incident may occur in the future. Examples of precursors include:</p>
+
+<ul>
+<li>Suspicious network and host-based IDS events/attacks;</li>
+<li>Alerts as a result of detecting malicious code at the network and host levels;</li>
+<li>Alerts from file integrity checking software;</li>
+<li>Audit log alerts.</li>
+</ul></li>
+<li><p><em>Risk</em>: The likelihood that a threat will exploit a vulnerability, and the impact of that event on the confidentiality, availability, and integrity of ePHI, other confidential or proprietary electronic information, and other system assets.</p></li>
+<li><p><em>Risk Management Team</em>: Individuals who are knowledgeable about the Organization’s HIPAA Privacy, Security and HITECH policies, procedures, training program, computer system set up, and technical security controls, and who are responsible for the risk management process and procedures outlined below.</p></li>
+<li><p><em>Risk Assessment</em>: (Referred to as Risk Analysis in the HIPAA Security Rule); the process:</p>
+
+<ul>
+<li>Identifies the risks to information system security and determines the probability of occurrence and the resulting impact for each threat/vulnerability pair identified given the security controls in place;</li>
+<li>Prioritizes risks; and</li>
+<li>Results in recommended possible actions/controls that could reduce or offset the determined risk.</li>
+</ul></li>
+<li><p><em>Risk Management</em>: Within this policy, it refers to two major process components: risk assessment and risk mitigation. This differs from the HIPAA Security Rule, which defines it as a risk mitigation process only. The definition used in this policy is consistent with the one used in documents published by the National Institute of Standards and Technology (NIST).</p></li>
+<li><p><em>Risk Mitigation</em>: Referred to as Risk Management in the HIPAA Security Rule, and is a process that prioritizes, evaluates, and implements security controls that will reduce or offset the risks determined in the risk assessment process to satisfactory levels within an organization given its mission and available resources.</p></li>
+<li><p><em>Security Incident</em> (or just Incident): A security incident is an occurrence that exercises a significant adverse effect on people, process, technology, or data. Security incidents include, but are not limited to: </p>
+
+<ul>
+<li>A system or network breach accomplished by an internal or external entity; this breach can be inadvertent or malicious;</li>
+<li>Unauthorized disclosure;</li>
+<li>Unauthorized change or destruction of ePHI (i.e. delete dictation, data alterations not following Catalyze’s procedures);</li>
+<li>Denial of service not attributable to identifiable physical, environmental, human or technology causes;</li>
+<li>Disaster or enacted threat to business continuity;</li>
+<li>Information Security Incident: A violation or imminent threat of violation of information security policies, acceptable use policies, or standard security practices. Examples of information security incidents may include, but are not limited to, the following:</li>
+<li>Denial of Service: An attack that prevents or impairs the authorized use of networks, systems, or applications by exhausting resources;</li>
+<li>Malicious Code: A virus, worm, Trojan horse, or other code-based malicious entity that infects a host;</li>
+<li>Unauthorized Access/System Hijacking: A person gains logical or physical access without permission to a network, system, application, data, or other resource. Hijacking occurs when an attacker takes control of network devices or workstations;</li>
+<li>Inappropriate Usage: A person violates acceptable computing use policies;</li>
+<li>Other examples of observable information security incidents may include, but are not limited to:
+
+<ul>
+<li>Use of another person’s individual password and/or account to login to a system;</li>
+<li>Failure to protect passwords and/or access codes (e.g., posting passwords on equipment);</li>
+<li>Installation of unauthorized software;</li>
+<li>Terminated workforce member accessing applications, systems, or network.</li>
+</ul></li>
+</ul></li>
+<li><p><em>Threat</em>: The potential for a particular threat-source to successfully exercise a particular vulnerability. Threats are commonly categorized as:</p>
+
+<ul>
+<li>Environmental – external fires, HVAC failure/temperature inadequacy, water pipe burst, power failure/fluctuation, etc.</li>
+<li>Human – hackers, data entry, workforce/ex-workforce members, impersonation, insertion of malicious code, theft, viruses, SPAM, vandalism, etc.</li>
+<li>Natural – fires, floods, electrical storms, tornados, etc.</li>
+<li>Technological – server failure, software failure, ancillary equipment failure, etc. and environmental threats, such as power outages, hazardous material spills.</li>
+<li>Other – explosions, medical emergencies, misuse or resources, etc. </li>
+</ul></li>
+<li><p><em>Threat Source</em>: Any circumstance or event with the potential to cause harm (intentional or unintentional) to an IT system. Common threat sources can be natural, human or environmental which can impact the organization’s ability to protect ePHI.</p></li>
+<li><p><em>Threat Action</em>: The method by which an attack might be carried out (e.g., hacking, system intrusion, etc.).</p></li>
+<li><p><em>Unrestricted Area</em>: Those areas of the building(s) where protected health information and/or sensitive organizational information is not stored or is not utilized or is not accessible there on a regular basis.</p></li>
+<li><p><em>Unsecured Protected Health Information</em>: Protected health information (PHI) that is not rendered unusable, unreadable, or indecipherable to unauthorized individuals through the use of technology or methodology specified by the Secretary in the guidance issued under section 13402(h)(2) of Pub. L.111-5 on the HHS website.</p>
+
+<ol>
+<li>Electronic PHI has been encrypted as specified in the HIPAA Security rule by the use of an algorithmic process to transform data into a form in which there is a low probability of assigning meaning without the use of a confidential process or key and such confidential process or key that might enable decryption has not been breached. To avoid a breach of the confidential process or key, these decryption tools should be stored on a device or at a location separate from the data they are used to encrypt or decrypt. The following encryption processes meet this standard.</li>
+<li>Valid encryption processes for data at rest (i.e. data that resides in databases, file systems and other structured storage systems) are consistent with NIST Special Publication 800-111, Guide to Storage Encryption Technologies for End User Devices.</li>
+<li>Valid encryption processes for data in motion (i.e. data that is moving through a network, including wireless transmission) are those that comply, as appropriate, with NIST Special Publications 800-52, Guidelines for the Selection and Use of Transport Layer Security (TLS) Implementations; 800-77, Guide to IPSec VPNs; or 800-113, Guide to SSL VPNs, and may include others which are Federal Information Processing Standards FIPS 140-2 validated.</li>
+<li>The media on which the PHI is stored or recorded has been destroyed in the following ways:</li>
+<li>Paper, film, or other hard copy media have been shredded or destroyed such that the PHI cannot be read or otherwise cannot be reconstructed. Redaction is specifically excluded as a means of data destruction.</li>
+<li>Electronic media have been cleared, purged, or destroyed consistent with NIST Special Publications 800-88, Guidelines for Media Sanitization, such that the PHI cannot be retrieved.</li>
+</ol></li>
+<li><p><em>Vendors</em>: Persons from other organizations marketing or selling products or services, or providing services to Catalyze. </p></li>
+<li><p><em>Vulnerability</em>: A weakness or flaw in an information system that can be accidentally triggered or intentionally exploited by a threat and lead to a compromise in the integrity of that system, i.e., resulting in a security breach or violation of policy.</p></li>
+<li><p><em>Workstation</em>: An electronic computing device, such as a laptop or desktop computer, or any other device that performs similar functions, used to create, receive, maintain, or transmit ePHI. Workstation devices may include, but are not limited to: laptop or desktop computers, personal digital assistants (PDAs), tablet PCs, and other handheld devices. For the purposes of this policy, “workstation” also includes the combination of hardware, operating system, application software, and network connection.</p></li>
+<li><p><em>Workforce</em>: Means employees, volunteers, trainees, and other persons whose conduct, in the performance of work for a covered entity, is under the direct control of such entity, whether or not they are paid by the covered entity. </p></li>
+</ul>
+
+      </div>
+
+      <div class="dark-box far-right-column">
+      </div>
+
+    </div>
+  </body>
+</html>

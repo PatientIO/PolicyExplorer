@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Documentation</title>
+
+    <link href="../stylesheets/screen.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../stylesheets/print.css" rel="stylesheet" type="text/css" media="print" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="../javascripts/all_nosearch.js" type="text/javascript"></script>
+
+  </head>
+
+  <body class="includes includes_data_integrity_policy">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="../images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+      <div class="brand-logo">
+      <img src="../images/logo.png" />
+      </div>
+      <div id="toc">
+      </div>
+    </div>
+    <div class="page-wrapper">
+
+      <div class="content">
+        <h1 id="data-integrity-policy">Data Integrity Policy</h1>
+
+<p>Catalyze takes data integrity very seriously. As stewards and partners of Catalyze Customers, we strive to assure data is protected from unauthorized access and that it is available when needed. The following policies drive many of our procedures and technical settings in support of the Catalyze mission of data protection.</p>
+
+<h2 id="applicable-standards-from-the-hitrust-common-security-framework">Applicable Standards from the HITRUST Common Security Framework</h2>
+
+<ul>
+<li>10.b - Input Data Validation</li>
+</ul>
+
+<h2 id="applicable-standards-from-the-hipaa-security-rule">Applicable Standards from the HIPAA Security Rule</h2>
+
+<ul>
+<li>164.308(a)(8) - Evaluation</li>
+</ul>
+
+<h2 id="data-integrity-policy">Data integrity Policy</h2>
+
+<p>Production Systems that create, receive, store, or transmit customer data (hereafter &ldquo;Production Systems&rdquo;) must follow the following guidelines.</p>
+
+<h3 id="disabling-non-essential-services">Disabling non-essential services</h3>
+
+<ul>
+<li>All Production Systems must disable services that are not required to achieve the business purpose or function of the system. </li>
+</ul>
+
+<h3 id="monitoring-log-in-attempts">Monitoring Log-in Attempts</h3>
+
+<ul>
+<li>All access to Production Systems must be logged. This is done following the Catalyze Auditing Policy.</li>
+</ul>
+
+<h3 id="prevention-of-malware-on-production-systems">Prevention of malware on Production Systems</h3>
+
+<ul>
+<li>All Production Systems must have OSSEC running at set to scan system every 2 hours and at reboot to assure not malware is present. Detected malware is evaluated and removed.</li>
+<li>All Production Systems are to only be used for Catalyze business needs.</li>
+</ul>
+
+<h3 id="patch-management">Patch Management</h3>
+
+<ul>
+<li>Patches, application, and system OS versions are kept up to date at all times. New versions are tested.</li>
+<li>Administrators subscribe to mailing lists to assure up to date on current version of all Catalyze managed software on Production Systems.</li>
+</ul>
+
+<h3 id="intrusion-detection-and-vulnerability-scanning">Intrusion Detection and Vulnerability Scanning</h3>
+
+<ul>
+<li>Production Systems are monitors using IDS systems. Suspicious activity is logged and alerts are generated.</li>
+<li>Vulnerability scanning of Production Systems must occur on a predetermined, regular basis, no less than annually. Currently it is weekly. Scans are reviewed by Security Officer, with defined steps for risk mitigation, and retained for future reference.</li>
+</ul>
+
+<h3 id="production-system-security">Production System Security</h3>
+
+<ul>
+<li>System, network, and server security is managed and maintained by the VP of Engineering and the Security Officer.</li>
+<li>Up to date system lists and architecture diagrams are kept for all Production environments.</li>
+<li>Access to Production Systems is controlled using centralized tools and two-factor authentication.</li>
+</ul>
+
+<h3 id="production-data-security">Production Data Security</h3>
+
+<ul>
+<li>Reduce the risk of compromise of Production Data.</li>
+<li>Implement and/or review controls designed to protect Production Data from improper alteration or destruction.</li>
+<li>Ensure that Confidential data is stored in a manner that supports user access logs and automated monitoring for potential security incidents.</li>
+<li>Ensure Catalyze customer Production Data is segmented and only accessible to customer authorized to access data.</li>
+<li>All Production Data at rest is stored on encrypted volumes.</li>
+</ul>
+
+<h3 id="transmission-security">Transmission Security</h3>
+
+<ul>
+<li>All data transmission is encrypted end to end. Encryption is not terminated at the network end point, and is carried through to the application.</li>
+<li>Encryption keys and machines that generate keys are protected from unauthorized access.</li>
+<li>Encryption keys are limited to use for one year and then must be regenerated.</li>
+<li>In the case of Catalyze provided APIs, provide mechanisms to assure person sending or receiving data is authorized to send and save data.</li>
+<li>System logs of all transmissions of Production Data access. These logs must be available for audit.</li>
+</ul>
+
+      </div>
+
+      <div class="dark-box far-right-column">
+      </div>
+
+    </div>
+  </body>
+</html>
